@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    display: grid;
+    justify-items: center;
+    align-content: center;
+}
+
+.container {
+    width: 600px;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 6fr;
+    padding-left: 30px;
+}
+
+.title {
+    color: hsl(0, 1%, 44%);
+    font-size: 13px;
+    font-weight: 400;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding-top: 10px;
+}
+
+.inputs {
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    padding-left: 10px;
+}
+
+.inputs input {
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+.submit {
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.submit div {
+    margin-top: 35px;
+    height: 1px;
+    background-color: lightgray;
+}
+
+.submit button {
+    height: 70px;
+    width: 70px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    border: 0;
+}
+
+.output {
+    grid-column: 1 / 1;
+    grid-row: 4 / 5;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 68px;
+}
+
+.output p {
+    padding: 0;
+    margin: 0;
+    color: hsl(0, 0%, 8%);
+}
+
+.output span {
+    color: hsl(259, 100%, 65%);
+}
+
+.submit button:hover {
+    background-color: black;
+    transition-timing-function: linear;
+    transition-duration: 0.2s;
+}
+
+.commonError {
+    color: hsl(0, 100%, 67%);
+    font-style: italic;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+
+
